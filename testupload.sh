@@ -10,6 +10,6 @@ echo ""
 /bin/echo "Grabbing the file that we just uploaded to the web space."
 echo ""
 wget -q -O /tmp/testfile.txt http://www.auto-x.com/results/live/results_live.htm
-diff -s /home/tscc/timing_files/results_live.htm /tmp/testfile.txt
+diff -b -s /home/tscc/timing_files/results_live.htm /tmp/testfile.txt
 echo ""
 echo "If they are identical, you are good to go. Otherwise, you have problems."
